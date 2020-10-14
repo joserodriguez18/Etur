@@ -9,8 +9,8 @@
 
                         <!-- Logo -->
                         <div class="footer_logo">
-                            <a href="#http://localhost:81/etur/">
-                                <img src="http://localhost:81/etur/img/logo.png" class="img-fluid" alt="">
+                            <a href="http://localhost/etur/">
+                                <img src="http://localhost/etur/img/logo.png" class="img-fluid" alt="">
                             </a>
                         </div>
 
@@ -43,7 +43,7 @@
                         <ul>
                             <li><a href="#">Enseña en Etur</a></li>
                             <li><a href="#">¿Quiénes somos?</a></li>
-                            <li><a href="http://localhost:81/etur/contactenos/">Contáctenos</a></li>
+                            <li><a href="http://localhost/etur/contactenos/">Contáctenos</a></li>
                         </ul>
                     </div>
 
@@ -70,7 +70,7 @@
                     <div class="footer_col">
                         <div class="footer_col_title">Comunidad</div>
                         <ul>
-                            <li><a href="http://localhost:81/etur/blog/">Blog</a></li>
+                            <li><a href="http://localhost/etur/blog/">Blog</a></li>
                             <li><a href="#">Q&A</a></li>
                         </ul>
                     </div>
@@ -112,11 +112,11 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="http://localhost:81/etur/js/bootstrap.js"></script>
+    <script src="http://localhost/etur/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="http://localhost:81/etur/js/main.js"></script>
-    <script src="http://localhost:81/etur/slick/slick.js"></script>
+    <script src="http://localhost/etur/js/main.js"></script>
+    <script src="http://localhost/etur/slick/slick.js"></script>
     </body>
 
     </html>

@@ -1,6 +1,9 @@
     <?php $titulo_pagina = "Etur"; ?>
     <!-- Header -->
-    <?php include("includes/header.php"); ?>
+    <?php
+        include("includes/indexinc.php");
+        include("includes/header.php");
+    ?>
     <!-- End Header -->
     <!-- Main -->
     <main>
@@ -27,37 +30,36 @@
         <!-- End Banner -->
         <!-- Categorías -->
         <section class="categorias">
-            <div class="container">
+            <div class="container-fluid">
                 <h2 class="h2-section padding-top-30 padding-bottom-10">Categorías principales</h2>
-                <p class="padding-bottom-30">Elige entre más de 50 cursos en vídeo y en línea con nuevo contenido cada mes
+                <p class="padding-bottom-30">Tenemos 3 categorías madres en las que se basan todos nuestros cursos
                 </p>
                 <div class="cards-grid">
-                    <a href="#" class="card_categoria">
-                        <img class="card_categoria__icon" src="img/main-banner/slider_amor.png" alt="">
-                        <div class="card_categoria__body">
-                            <h4 class="card_categoria__head">Amor</h4>
-                        </div>
-                    </a>
-                    <a href="#" class="card_categoria">
-                        <img class="card_categoria__icon" src="img/main-banner/slider_bienestar.png" alt="">
-                        <div class="card_categoria__body">
-                            <h4 class="card_categoria__head">Bienestar</h4>
-                        </div>
-                    </a>
-                    <a href="#" class="card_categoria">
-                        <img class="card_categoria__icon" src="img/main-banner/slider_finanzas.png" alt="">
-                        <div class="card_categoria__body">
-                            <h4 class="card_categoria__head">Finanzas</h4>
-                        </div>
-                    </a>
+                <?php
+                foreach ($arrcategorias as $categoria)
+                {
+                    $rutaImagen = homologarRuta($categoria['imagen']);
+            		if(!empty($categoria['imagen'])){
+            	?>
+                <a href="categoria/<?php echo strtolower($categoria['categoria']); ?>" class="card_categoria">
+                    <img class="card_categoria__icon" src="<?php echo $rutaImagen; ?>" alt="">
+                    <div class="card_categoria__body">
+                        <h4 class="card_categoria__head"><?php echo homologarTexto($categoria['categoria']); ?></h4>
+                    </div>
+                </a>
+                <?php
+                    }  
+                }
+                ?>
                 </div>
             </div>
         </section>
         <!-- End Categorías -->
         <!-- Pestañas -->
         <section class="nuevos-cursos">
-            <div class="container">
-                <h2 class="h2-section padding-bottom-10">Los usuarios están viendo</h2>
+            <div class="container-fluid">
+                <h2 class="h2-section padding-bottom-10">Los más populares</h2>
+                <p class="padding-bottom-30"> 3 categorías madres en las que se basan todos nuestros cursos
                 <div class="carrusel-cursos">
                     <div class="padding-left-10 padding-right-10">
                         <div class="course-card">

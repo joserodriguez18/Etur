@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+
+#   Reescribir la URL solicitada por el usuario
+
+#   Categoría
+#   Entrada: categoria/NOMBRE_CATEGORIA/
+#   Salida: categorias/categorias.php?categoria=NOMBRE_CATEGORIA
+
+RewriteRule ^categoria/([a-zA-Z]+)$ categorias/categorias.php?categoria=$1
+
+#   Subcategoría
+#   Entrada: categoria/NOMBRE_CATEGORIA/NOMBRE_SUBCATEGORIA
+#   Salida: categorias/categorias.php?categoria=NOMBRE_CATEGORIA&subcategoria=NOMBRE_SUBCATEGORIA
+
+RewriteRule ^categoria/([a-zA-Z]+)/([a-zA-Z]+)$ categorias/subcategoria.php?categoria=$1&subcategoria=$2

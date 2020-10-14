@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="http://localhost:81/etur/css/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost/etur/css/bootstrap.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css'>
-    <link rel="stylesheet" href="http://localhost:81/etur/css/estilos.css">
-    <link rel="shortcut icon" type="image/x-icon" href="http://localhost:81/etur/img/favicon.png">
-    <link rel="stylesheet" href="http://localhost:81/etur/slick/slick.css">
-    <link rel="stylesheet" href="http://localhost:81/etur/slick/slick-theme.css">
+    <link rel="stylesheet" href="http://localhost/etur/css/estilos.css">
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost/etur/img/favicon.png">
+    <link rel="stylesheet" href="http://localhost/etur/slick/slick.css">
+    <link rel="stylesheet" href="http://localhost/etur/slick/slick-theme.css">
     <title><?php echo $titulo_pagina; ?></title>
 </head>
 
@@ -39,15 +39,15 @@
             <button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
             <button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
             <a href="">
-                <img src="http://localhost:81/etur/img/logo.png" alt="">
+                <img src="http://localhost/etur/img/logo.png" alt="">
             </a>
         </div>
 
         <div class="container-fluid contenedor-enlaces-nav">
             <div class="contenedor-enlaces-nav-hijo">
                 <div class="contenedor-logo">
-                    <a href="http://localhost:81/etur/">
-                        <img src="http://localhost:81/etur/img/logo.png" alt="">
+                    <a href="http://localhost/etur/">
+                        <img src="http://localhost/etur/img/logo.png" alt="">
                     </a>
                 </div>
                 <div class="btn-departamentos" id="btn-departamentos">
@@ -56,9 +56,8 @@
                 </div>
             </div>
             <div class="enlaces">
-                <a class="link" href="http://localhost:81/etur/blog/">Blog</a>
-                <a class="link" href="#">Iniciar sesión</a>
-                <a class="link" href="#">Regístrate</a>
+                <a class="link" href="http://localhost/etur/blog/">Blog</a>
+                <a class="link" href="http://localhost:8000/admin/login">Iniciar sesión</a>
                 <a href="javascript:void(0);" class="search-trigger search-btn link">
                     <i class="fas fa-search"></i>
                 </a>
@@ -88,22 +87,22 @@
 
                         <div class="banner-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/main-banner/slider_amor.png" alt="">
+                                <img src="http://localhost/etur/img/main-banner/slider_amor.png" alt="">
                             </a>
                         </div>
 
                         <div class="galeria-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/tecnologia-galeria-1.png" alt="">
+                                <img src="http://localhost/etur/img/tecnologia-galeria-1.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/tecnologia-galeria-2.png" alt="">
+                                <img src="http://localhost/etur/img/tecnologia-galeria-2.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/tecnologia-galeria-3.png" alt="">
+                                <img src="http://localhost/etur/img/tecnologia-galeria-3.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/tecnologia-galeria-4.png" alt="">
+                                <img src="http://localhost/etur/img/tecnologia-galeria-4.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -119,22 +118,22 @@
 
                         <div class="banner-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/main-banner/slider_bienestar.png" alt="">
+                                <img src="http://localhost/etur/img/main-banner/slider_bienestar.png" alt="">
                             </a>
                         </div>
 
                         <div class="galeria-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/libros-galeria-1.png" alt="">
+                                <img src="http://localhost/etur/img/libros-galeria-1.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/libros-galeria-2.png" alt="">
+                                <img src="http://localhost/etur/img/libros-galeria-2.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/libros-galeria-3.png" alt="">
+                                <img src="http://localhost/etur/img/libros-galeria-3.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/libros-galeria-4.png" alt="">
+                                <img src="http://localhost/etur/img/libros-galeria-4.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -150,22 +149,22 @@
 
                         <div class="banner-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/main-banner/slider_finanzas.png" alt="">
+                                <img src="http://localhost/etur/img/main-banner/slider_finanzas.png" alt="">
                             </a>
                         </div>
 
                         <div class="galeria-subcategoria">
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/ropa-galeria-1.png" alt="">
+                                <img src="http://localhost/etur/img/ropa-galeria-1.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/ropa-galeria-2.png" alt="">
+                                <img src="http://localhost/etur/img/ropa-galeria-2.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/ropa-galeria-3.png" alt="">
+                                <img src="http://localhost/etur/img/ropa-galeria-3.png" alt="">
                             </a>
                             <a href="#">
-                                <img src="http://localhost:81/etur/img/ropa-galeria-4.png" alt="">
+                                <img src="http://localhost/etur/img/ropa-galeria-4.png" alt="">
                             </a>
                         </div>
                     </div>

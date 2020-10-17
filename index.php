@@ -1,14 +1,14 @@
     <?php $titulo_pagina = "Etur"; ?>
     <!-- Header -->
     <?php
-        include("includes/indexinc.php");
-        include("includes/header.php");
+    include("includes/indexinc.php");
+    include("includes/header.php");
     ?>
     <!-- End Header -->
     <!-- Main -->
     <main>
         <!-- Banner -->
-        <section class="banner">
+        <!-- <section class="banner">
             <div class="banner--image-container">
                 <img src="img/main-banner/5.jpg" alt="">
             </div>
@@ -26,31 +26,35 @@
                     </div>
                 </form>
             </div>
+        </section> -->
+        <section>
+            <div>
+                <img src="img/main-banner/5.jpg" class="img-fluid" alt="">
+            </div>
         </section>
         <!-- End Banner -->
         <!-- Categorías -->
         <section class="categorias">
-            <div class="container-fluid">
-                <h2 class="h2-section padding-top-30 padding-bottom-10">Categorías principales</h2>
-                <p class="padding-bottom-30">Tenemos 3 categorías madres en las que se basan todos nuestros cursos
+            <div class="container-fluid padding-bottom-20">
+                <h2 class="h2-section padding-bottom-10">Categorías principales</h2>
+                <p class="padding-bottom-30">Tenemos 3 categorías generales en las que se basan todos nuestros cursos
                 </p>
                 <div class="cards-grid">
-                <?php
-                foreach ($arrcategorias as $categoria)
-                {
-                    $rutaImagen = homologarRuta($categoria['imagen']);
-            		if(!empty($categoria['imagen'])){
-            	?>
-                <a href="categoria/<?php echo strtolower($categoria['categoria']); ?>" class="card_categoria">
-                    <img class="card_categoria__icon" src="<?php echo $rutaImagen; ?>" alt="">
-                    <div class="card_categoria__body">
-                        <h4 class="card_categoria__head"><?php echo homologarTexto($categoria['categoria']); ?></h4>
-                    </div>
-                </a>
-                <?php
-                    }  
-                }
-                ?>
+                    <?php
+                    foreach ($arrcategorias as $categoria) {
+                        $rutaImagen = homologarRuta($categoria['imagen']);
+                        if (!empty($categoria['imagen'])) {
+                    ?>
+                            <a href="categoria/<?php echo strtolower($categoria['categoria']); ?>" class="card_categoria">
+                                <img class="card_categoria__icon" src="<?php echo $rutaImagen; ?>" alt="">
+                                <div class="card_categoria__body">
+                                    <h4 class="card_categoria__head"><?php echo homologarTexto($categoria['categoria']); ?></h4>
+                                </div>
+                            </a>
+                    <?php
+                        }
+                    }
+                    ?>
                 </div>
             </div>
         </section>
@@ -59,91 +63,47 @@
         <section class="nuevos-cursos">
             <div class="container-fluid">
                 <h2 class="h2-section padding-bottom-10">Los más populares</h2>
-                <p class="padding-bottom-30"> 3 categorías madres en las que se basan todos nuestros cursos
+                <p class="padding-bottom-30"> 3 categorías madres en las que se basan todos nuestros cursos</p>
                 <div class="carrusel-cursos">
                     <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/1.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
+                        <a href="#" class="card-course__link">
+                            <div class="card-course">
+                                <div class="card-course__thumbnail">
+                                    <img class="card-course__thumbnail-img" src="img/cursos/1.jpg">
+                                </div>
+                                <div class="card-course__content">
+                                    <div class="card-course__name">
+                                        Curso Introducción al mundo del sobrepeso y la obesidad.
+                                    </div>
+                                    <div class="card-course__instrcutor">
+                                        Julio Londoño
+                                    </div>
+                                    <div class="card-course__price">
+                                        18.990&nbsp;COP$
+                                    </div>
+                                </div>
                             </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Matrimonio</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso sobre el amor en la relación entre sexos</a>
-                                </h3>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/2.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
+                        <a href="#" class="card-course__link">
+                            <div class="card-course">
+                                <div class="card-course__thumbnail">
+                                    <img class="card-course__thumbnail-img" src="img/cursos/2.jpg">
+                                </div>
+                                <div class="card-course__content">
+                                    <div class="card-course__name">
+                                        Curso de alimentación para deportes extremos.
+                                    </div>
+                                    <div class="card-course__instrcutor">
+                                        Jose Rodriguez
+                                    </div>
+                                    <div class="card-course__price">
+                                        Gratis
+                                    </div>
+                                </div>
                             </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Alimentación</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso Introducción al mundo del sobrepeso y la obesidad</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/3.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
-                            </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Inversión</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso de Introducción a los mercados bursátiles</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/4.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
-                            </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Deportes</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso Sentadillas para glúteos</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/5.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
-                            </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Pareja</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso celos entre parejas</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="padding-left-10 padding-right-10">
-                        <div class="course-card">
-                            <div class="course-card__thumbnail">
-                                <img class="course-card__thumbnail-image" src="img/cursos/6.jpg" />
-                                <a class="course-card__thumbnail-link" href="http://localhost:81/etur/curso"></a>
-                            </div>
-                            <div class="course-card__info">
-                                <a class="course-card__category" href="http://localhost:81/etur/curso">Ahorro</a>
-                                <h3 class="course-card__headline">
-                                    <a class="course-card__headline-link text-truncate" href="http://localhost:81/etur/curso">Curso de Soluciones financieras en el hogar</a>
-                                </h3>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
